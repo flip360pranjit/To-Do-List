@@ -74,9 +74,22 @@ Group.deleteMany({},function(err){
 
 
 
-
-
 app.get("/", function(req,res){
+    List.deleteMany({},function(err){
+        if(err){
+            res.send(err);
+        }
+    });
+    Group.deleteMany({},function(err){
+        if(err){
+            res.send(err);
+        }
+    });
+    currentHeading = today;
+    res.redirect("/home");
+})
+
+app.get("/home", function(req,res){
     if(currentHeading===today)
     {
         List.find({}, function(err, foundTasks){
@@ -87,7 +100,7 @@ app.get("/", function(req,res){
                     List.insertMany([task1, task2, task3]).catch(function(err){
                         console.log(err);
                     });
-                    res.redirect("/");
+                    res.redirect("/home");
                 }else{
                     res.render("index", {heading: today, tasks: foundTasks});
                 }
@@ -117,7 +130,7 @@ app.get("/new", function(req, res){
             res.send(err);
         }
     });
-    res.redirect("/");
+    res.redirect("/home");
 })
 app.get("/create", function(req, res){
     res.render("createNewList");
@@ -138,7 +151,7 @@ app.post("/addItem", function(req,res){
             foundList.save();
         });
     }
-    res.redirect("/");
+    res.redirect("/home");
 });
 app.post("/delete", function(req, res){
     const checkedTask = req.body.checked;
@@ -155,7 +168,7 @@ app.post("/delete", function(req, res){
             }
         });
     }
-    res.redirect("/");
+    res.redirect("/home");
 });
 app.post("/create", function(req, res){
     currentHeading = req.body.listTitle;
@@ -171,7 +184,7 @@ app.post("/create", function(req, res){
                 customList.save();
                 res.render("index", {heading: req.body.listTitle, tasks: tasks});
             }else{
-                res.redirect("/");
+                res.redirect("/home");
             }
         }
     });
