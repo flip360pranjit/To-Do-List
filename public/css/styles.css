@@ -14,16 +14,16 @@ body
 /*********************************************** Navigation Bar *********************************************************/
 .dark-top
 {
-  height: 30px;
+  height: 1.875rem;
   background-color: #3F4E4F;
 }
 .light-bottom
 {
-  height: 60px;
+  height: 3.75rem;
   background: white;
 }
 .logo {
-  width: 50px;
+  width: 3.125rem;
   margin-right: 1rem;
 }
 .logo-txt
@@ -41,7 +41,7 @@ body
 .toggle-button
 {
   background-color: #A66CFF;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 .nav-txt
 {
@@ -50,7 +50,7 @@ body
 }
 .cart-icon
 {
-  margin-right: 3px;
+  margin-right: 0.1875rem;
 }
 .navbar-brand {
   font-family: "Poppins";
@@ -64,7 +64,7 @@ body
   align-items: center;
 }
 .nav-item {
-  padding: 0 18px;
+  padding: 0 1.125rem;
 }
 
 .nav-link {
@@ -94,7 +94,7 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 0 5px;
+    padding: 0.9375rem 0 0.3125rem;
 }
 .date h2
 {
@@ -102,31 +102,31 @@ body
     font-family: "Poppins";
     background-color: #A66CFF;
     color: white;
-    border-radius: 5px;
-    padding: 10px 100px;
+    border-radius: 0.3125rem;
+    padding: 0.625rem 6.25rem;
     margin: 0;
 }
 
 hr
 {
     border: none;
-    border: 2px solid white;
-    width: 400px;
+    border: 0.125rem solid white;
+    width: 25rem;
 }
 
 /*********************************************List Items***************************************/
 .list-div
 {
     background-color: white;
-    padding: 20px 20px;
-    border-radius: 5px;
+    padding: 1.25rem 1.25rem;
+    border-radius: 0.3125rem;
 }
 .list-item
 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 .add-item
 {
@@ -137,10 +137,10 @@ hr
 .add-item form input
 {
     border: none;
-    border-bottom: 2px solid #DFDFDE;
-    height: 30px;
-    margin-left: 20px;
-    width: 270px;
+    border-bottom: 0.125rem solid #DFDFDE;
+    height: 1.875rem;
+    margin-left: 1.25rem;
+    width: 16.875rem;
 }
 .add
 {
@@ -148,9 +148,9 @@ hr
     border: none;
     border-radius: 100%;
     font-size: 2rem;
-    padding: 0px 18px 8px;
+    padding: 0px 1.125rem 0.5rem;
     color: white;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 .add:hover
 {
@@ -162,31 +162,31 @@ hr
   }
   .add-item form input[type="text"] {
     text-align: center;
-    height: 60px;
-    top: 10px;
+    height: 3.75rem;
+    top: 0.625rem;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 0.0625rem solid black;
     background: transparent;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
   }
   
 .add-item form input[type="text"]:focus {
     outline: none;
     border: none;
-    box-shadow: inset 0 -3px 0 0 #A683E3;
+    box-shadow: inset 0 -0.1875rem 0 0 #A683E3;
 }
 
 .new-list-div
 {
     display: flex;
     justify-content: flex-end;
-    margin: 0 40px;
+    margin: 0 2.5rem;
     cursor: pointer;
 }
 .new-list
 {
-    height: 100px;
+    height: 6.25rem;
     border-radius: 50%;
 }
 .new-list:hover
@@ -209,14 +209,14 @@ hr
 }
 .create-content
 {
-  margin-top: 100px;
+  margin-top: 6.25rem;
   display: flex;
   flex-direction: column;
   backdrop-filter: blur(10px);
   justify-content: center;
   align-items: center;
   align-self: center;
-  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;
   border-radius: 5px;
   border: solid;
   border-image-slice: 1;
@@ -229,7 +229,7 @@ hr
   font-size: 2rem;
   font-weight: 700;
   font-family: "Poppins";
-  margin: 20px 0;
+  margin: 1.25rem 0;
 }
 .create-content form
 {
@@ -240,10 +240,10 @@ hr
 }
 .create-content form input
 {
-  font-size: 24px;
-  height: 40px;
-  width: 300px;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  width: 18.75rem;
+  margin-bottom: 1.25rem;
   border: none;
   border-bottom: 3px solid #DFDFDE;
   background: transparent;
@@ -254,13 +254,13 @@ hr
 }
 .create-content img
 {
-  width: 150px;
+  width: 9.375rem;
 }
 .createList
 {
   background-color: black;
   color: white;
-  padding: 15px 70px;
+  padding: 0.9375rem 4.375rem;
   border: solid;
   border-image-slice: 1;
   border-width: 5px;
@@ -273,15 +273,8 @@ hr
 
 .pre-footer
 {
-  height: 110px;
+  height: 6.875rem;
 }
-
-
-
-
-
-
-
 
 
 
