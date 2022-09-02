@@ -159,6 +159,11 @@ app.post("/delete", function(req, res){
 });
 app.post("/create", function(req, res){
     currentHeading = req.body.listTitle;
+    Group.deleteMany({},function(err){
+        if(err){
+            res.send(err);
+        }
+    });
     Group.findOne({name: req.body.listTitle}, function(err, foundList){
         if(err){
             res.send(err);
