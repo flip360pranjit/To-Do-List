@@ -23,7 +23,7 @@ const today = day.toLocaleDateString("en-IN", options);
 
 
 ///////////////////////////////////////Connecting to Database//////////////////////////////////////////
-const adminPassword = "test123";
+const adminPassword = process.env.PASS;
 mongoose.connect("mongodb+srv://admin-pranjit:"+ adminPassword +"@cluster0.i51gd.mongodb.net/dailyDB",{useNewUrlParser: true});
 
 
