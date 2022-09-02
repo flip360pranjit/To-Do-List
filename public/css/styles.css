@@ -307,4 +307,8 @@ hr
   {
     backdrop-filter: blur(20px);
   }
+  .add-item form input
+  {
+    width: 12rem;
+  }
 }
