@@ -307,4 +307,7 @@ hr
   {
     backdrop-filter: blur(20px);
   }
+  .content{
+    transform: scale(2);
+  }
 }
