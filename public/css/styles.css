@@ -1,0 +1,317 @@
+h4
+{
+    display: inline-block;
+    font-family: "Courgette";
+}
+body
+{
+    margin: 0;
+    background-image: linear-gradient(45deg, #00cdac 0%, #8ddad5 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*********************************************** Navigation Bar *********************************************************/
+.dark-top
+{
+  height: 30px;
+  background-color: #3F4E4F;
+}
+.light-bottom
+{
+  height: 60px;
+  background: white;
+}
+.logo {
+  width: 50px;
+  margin-right: 1rem;
+}
+.logo-txt
+{
+  font-size: 2rem;
+}
+.navbar {
+  padding-bottom: 1rem;
+}
+.nav-bar
+{
+  background-color: white;
+  color: black;
+}
+.toggle-button
+{
+  background-color: #A66CFF;
+  border-radius: 5px;
+}
+.nav-txt
+{
+  color: black;
+  font-family: "Poppins";
+}
+.cart-icon
+{
+  margin-right: 3px;
+}
+.navbar-brand {
+  font-family: "Poppins";
+  font-size: 3rem;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+.nav-logo
+{
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  font-weight: 100;
+  color: #2C3639 !important;
+  margin-right: 2rem;
+}
+.nav-link:hover
+{
+    color: #C8C6C6 !important;
+}
+
+/*********************************************Content*********************************************/
+.content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*********************************************** Date *********************************************************/
+.date
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 5px;
+}
+.date h2
+{
+    text-align: center;
+    font-family: "Poppins";
+    background-color: #A66CFF;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 100px;
+    margin: 0;
+}
+
+hr
+{
+    border: none;
+    border: 2px solid white;
+    width: 400px;
+}
+
+/*********************************************List Items***************************************/
+.list-div
+{
+    background-color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+.list-item
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.add-item
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-item form input
+{
+    border: none;
+    border-bottom: 2px solid #DFDFDE;
+    height: 30px;
+    margin-left: 20px;
+    width: 270px;
+}
+.add
+{
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    border: none;
+    border-radius: 100%;
+    font-size: 2rem;
+    padding: 0px 18px 8px;
+    color: white;
+    margin-left: 20px;
+}
+.add:hover
+{
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+.list-item form input:checked+h4 {
+    text-decoration: line-through;
+    text-decoration-color: #A683E3;
+  }
+  .add-item form input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+.add-item form input[type="text"]:focus {
+    outline: none;
+    border: none;
+    box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+.new-list-div
+{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 40px;
+    cursor: pointer;
+}
+.new-list
+{
+    height: 100px;
+    border-radius: 50%;
+}
+.new-list:hover
+{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+
+
+/****************************************Create a New List**************************************/
+.create-background
+{
+  background: url("../one-piece.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.create-content
+{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 50px 20px;
+  border-radius: 5px;
+  border: solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(60deg, #2E0249, #1E5128);
+}
+.create-content h1
+{
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Poppins";
+  margin: 20px 0;
+}
+.create-content form
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.create-content form input
+{
+  font-size: 24px;
+  height: 40px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 3px solid #DFDFDE;
+  background: transparent;
+}
+.create-content form input:focus
+{
+  outline: none;
+}
+.create-content img
+{
+  width: 150px;
+}
+.createList
+{
+  background-color: black;
+  color: white;
+  padding: 15px 70px;
+  border: solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(60deg, #F806CC, #37E2D5);
+}
+.createList:hover
+{
+  background-color: #2C3333;
+}
+
+.pre-footer
+{
+  height: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+/*************************************************Footer********************************************/
+.footer
+{
+    background-color: black;
+    position: absolute;
+    top: auto;
+    width: 100%;
+}
+.footer h5
+{
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+  .create-background
+  {
+    background: url("../demon-slayer.jpg");
+
+  }
+  .create-content
+  {
+    backdrop-filter: blur(20px);
+  }
+}
