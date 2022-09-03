@@ -6,7 +6,7 @@ h4
 body
 {
     margin: 0;
-    background-image: linear-gradient(45deg, #00cdac 0%, #8ddad5 100%);
+    background-image: linear-gradient(45deg, #FF00E4 0%, #00FFC6 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -100,11 +100,12 @@ body
 {
     text-align: center;
     font-family: "Poppins";
-    background-color: #A66CFF;
+    background-color: #AE00FB;
     color: white;
     border-radius: 0.3125rem;
-    padding: 0.625rem 6.25rem;
+    padding: 0.625rem 5.25rem;
     margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 hr
@@ -194,6 +195,17 @@ hr
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
+.error h6
+{
+  text-align: center;
+  color: red;
+  font-size: 1.2rem;
+}
+
+
+
+
+
 
 
 /****************************************Create a New List**************************************/
@@ -273,7 +285,7 @@ hr
 
 .pre-footer
 {
-  height: 6.875rem;
+  height: 14.875rem;
 }
 
 
@@ -311,4 +323,5 @@ hr
   {
     width: 14rem;
   }
+
 }

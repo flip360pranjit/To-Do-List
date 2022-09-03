@@ -40,6 +40,7 @@
     </div>
 
     <div class="content">
+
         <!-- Date -->
         <div class="date">
             <h2><%= heading %></h2>
@@ -58,6 +59,9 @@
             </div>
           <% } %>
           
+          <div class="error">
+            <h6><%= error %></h6>
+          </div>
             
           <div class="add-item">
             <form action="/addItem" method="post">
